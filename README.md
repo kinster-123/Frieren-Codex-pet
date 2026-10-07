@@ -18,17 +18,20 @@
 
 ## 安装
 
-在已启用桌宠功能的 Codex 桌面应用中，打开下面的链接：
-
-[安装芙莉莲桌宠](codex://pets/install?name=Frieren&imageUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fkinster-123%2FFrieren-Codex-pet%2Fmain%2Ffrieren-floating-book-spritesheet-v2.png&description=Frieren%20with%20a%20floating%20spellbook&spriteVersionNumber=2)
-
-如果浏览器没有自动打开 Codex，可复制以下地址并粘贴到地址栏：
+GitHub 会过滤 `codex://` 自定义协议，因此安装地址无法在 README 中直接点击。请复制下面的完整地址：
 
 ```text
 codex://pets/install?name=Frieren&imageUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fkinster-123%2FFrieren-Codex-pet%2Fmain%2Ffrieren-floating-book-spritesheet-v2.png&description=Frieren%20with%20a%20floating%20spellbook&spriteVersionNumber=2
 ```
 
-安装链接使用公开的 GitHub Raw HTTPS 地址和 `spriteVersionNumber=2`。详情见 [OpenAI 官方深链接说明](https://learn.chatgpt.com/docs/reference/commands#pets)。
+然后使用下列任一方式打开：
+
+- Windows：按 `Win + R`，粘贴地址并按回车；也可以在 PowerShell 中运行 `Start-Process '<复制的地址>'`。
+- macOS：在终端中运行 `open '<复制的地址>'`。
+
+Codex 将打开桌宠安装确认页。安装后前往 `Settings > Pets` 选择 `Frieren`，再输入 `/pet` 显示桌宠。如果系统没有响应，请先更新桌面应用并确认 Pets 功能已开放。
+
+该地址使用公开的 GitHub Raw HTTPS 精灵图和 `spriteVersionNumber=2`。也可以[单独下载精灵图](https://raw.githubusercontent.com/kinster-123/Frieren-Codex-pet/main/frieren-floating-book-spritesheet-v2.png)。参数详情见 [OpenAI 官方深链接说明](https://learn.chatgpt.com/docs/reference/commands#pets)。
 
 ## 手动使用
 
@@ -45,13 +48,6 @@ codex://pets/install?name=Frieren&imageUrl=https%3A%2F%2Fraw.githubusercontent.c
 └── ASSET_NOTICE.md                            # 素材与版权说明
 ```
 
-## 完整性校验
-
-```text
-SHA-256: 73789fc1a6a020c8d58570cca007dd9ea39c7b965b36aef36ae4ebdecbae33ce
-```
-
 ## 版权
 
 本仓库不附带可将角色形象用于商业用途的授权，也不以开源许可证重新许可第三方知识产权。详情见 [ASSET_NOTICE.md](ASSET_NOTICE.md)。
-
